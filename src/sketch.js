@@ -8,11 +8,10 @@ function setup() {
 	rectMode(CORNERS);
 	strokeWeight(STROKE_WEIGHT);
 
-	background(128);
-	maze.generate();
-	maze.draw();
 }
 
 function draw() {
-
+	maze.step();
+	background(128);
+	maze.draw();
 }
